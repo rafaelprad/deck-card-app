@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-Black.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-BlackItalic.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-BlackItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-Bold.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-BoldItalic.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-LightItalic.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-LightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-Light.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-MediumItalic.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-MediumItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-Medium.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik/Rubik-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Rubik/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cardchar';
+  src: url('../assets/fonts/Cardchar/CARDC___.TTF') format('ttf');
+}

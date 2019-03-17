@@ -1,0 +1,11 @@
+mat-card.card-player {
+  margin: 0 auto !important;
+  margin-top: 2.5% !important;
+  padding: 2px !important;
+}
+mat-card.card-player img {
+  width: 20px;
+}
+mat-card.card-player .card-player-total-chip {
+  text-align: right;
+}

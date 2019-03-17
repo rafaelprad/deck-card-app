@@ -1,0 +1,32 @@
+<div fxLayout="row" fxLayoutAlign="center">
+  <div *ngIf="!canShowValueOfCard()"  class="card-suit" fxLayout="row" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="100%">
+      <img src="../../assets/images/back-card.png">
+    </div>  
+  </div>
+  <mat-card *ngIf="canShowValueOfCard()" class="card-suit">
+    <mat-card-content>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <div fxLayout="column" fxFlex="100%">
+          <div fxLayout="row" fxLayoutAlign="start">
+            <div fxLayout="column" fxFlex="100%" [ngStyle]="getStyle()">
+              {{ card.symbol }}
+            </div>  
+          </div>
+          <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxFlex="100%">
+              <img [src]="getUrlSuitFilename()">
+            </div>  
+          </div>
+          <div fxLayout="row" fxLayoutAlign="end">
+            <div fxLayout="column" fxFlex="100%" [ngStyle]="getStyle()">
+              {{ card.symbol }}
+            </div>  
+          </div>
+          </div>  
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>  
+</div>

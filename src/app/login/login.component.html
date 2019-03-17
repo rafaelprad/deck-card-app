@@ -1,0 +1,68 @@
+<mat-card class="card-home" fxLayout="column" fxLayoutAlign="center" fxLayoutGap.xs="0">
+
+  <mat-card-header>
+    <mat-card-title>
+      <h3>{{ 'Deck of card' }}</h3>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <img src="../../assets/images/home-deck.png">
+
+    <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap.xs="unset" fxLayoutAlign="center">
+        <mat-form-field fxLayout="column" fxFlex="94%" fxFlex.xs="90%">
+        <input matInput id="txtNamePlayer" type="text" [formControl]="formPlay.controls['namePlayer']"
+          [(ngModel)]="player.name" (keypress)="keyRestrictCharWithNumber($event)" (keydown)="keyRestrictCharWithNumber($event)"
+          (keyup)="keyRestrictCharWithNumber($event)" maxlength=18 required>
+        <mat-hint>{{ 'Player name' }}</mat-hint>
+        <mat-error>{{ 'This field is required.' }}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="5px" fxLayoutGap.xs="unset" fxLayoutAlign="center">
+      <mat-form-field fxLayout="column" fxFlex="30%" fxFlex.xs="90%">
+        <input matInput id="txtQtyPockerChip10" type="number" [formControl]="formPlay.controls['qtyPockerChip10Player']"
+          [(ngModel)]="player.qtyPockerChip10" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+          (keyup)="keyRestrictOnlyNumber($event)" maxlength=5 required>
+        <mat-hint>{{ 'Qty. chip 10' }}</mat-hint>
+        <mat-error>{{ 'This field is required.' }}</mat-error>
+      </mat-form-field>
+      <mat-form-field fxLayout="column" fxFlex="30%" fxFlex.xs="90%">
+        <input matInput id="txtQtyPockerChip20" type="number" [formControl]="formPlay.controls['qtyPockerChip20Player']"
+          [(ngModel)]="player.qtyPockerChip20" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+          (keyup)="keyRestrictOnlyNumber($event)" maxlength=5 required>
+        <mat-hint>{{ 'Qty. chip 20' }}</mat-hint>
+        <mat-error>{{ 'This field is required.' }}</mat-error>
+      </mat-form-field>
+      <mat-form-field fxLayout="column" fxFlex="30%" fxFlex.xs="90%">
+        <input matInput id="txtQtyPockerChip100" type="number" [formControl]="formPlay.controls['qtyPockerChip100Player']"
+          [(ngModel)]="player.qtyPockerChip100" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+          (keyup)="keyRestrictOnlyNumber($event)" maxlength=5 required>
+        <mat-hint>{{ 'Qty. chip 100' }}</mat-hint>
+        <mat-error>{{ 'This field is required.' }}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap.xs="unset" fxLayoutAlign="center">
+      <mat-form-field fxLayout="column" fxFlex="94%" fxFlex.xs="90%">
+        <input matInput id="txtQtyMinimunBet" type="number" [formControl]="formPlay.controls['qtyMinimumBet']"
+          [(ngModel)]="qtyMinimumBet" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+          (keyup)="keyRestrictOnlyNumber($event)" maxlength=5 required>
+        <mat-hint>{{ 'Minimun bet' }}</mat-hint>
+        <mat-error>{{ 'This field is required.' }}</mat-error>
+      </mat-form-field>
+    </div>
+
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div *ngIf="( staCheckForm || ( formPlay.invalid && (formPlay.dirty || formPlay.touched) ))" fxLayout="row" fxLayoutAlign="center">
+      <mat-error>{{ 'Please, verify yours entries data.' }}</mat-error>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <button mat-button id="btnLetsPlay" (click)="onBtnLetsPlay()" fxLayout="column" fxFlex="100%">{{ 'Let\'s play' }}</button>
+    </div>
+  </mat-card-actions>
+  
+</mat-card>

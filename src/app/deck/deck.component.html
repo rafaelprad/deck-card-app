@@ -1,0 +1,95 @@
+<div fxLayout="row" fxLayoutAlign="center">
+  <div fxLayout="column" fxFlex="100%">
+
+    <div fxLayout="row" fxLayoutAlign="center">
+      <div fxLayout="column" fxFlex="60%">
+        <img src="../../assets/images/deck-580-400.svg">
+      </div>  
+    </div>
+
+  </div>  
+</div>
+
+<div class="deck-top-row">
+  <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="250px">
+      <player [player]="getPlayer(0)"></player>
+    </div>  
+    <div fxLayout="column" fxFlex="250px">
+      <player [player]="getPlayer(1)"></player>
+    </div>  
+    <div fxLayout="column" fxFlex="250px">
+      <player [player]="getPlayer(2)"></player>
+    </div>  
+  </div>
+</div>
+
+<div class="deck-left-information">
+  <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start">
+    <div fxLayout="column" fxFlex="250px">
+      <mat-card>
+        <mat-card-content>
+          <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center">
+            <mat-form-field fxLayout="column">
+              <input matInput id="txtQtyMinimumBet" type="text"
+                [(ngModel)]="deck.qtyMinimumBet" readonly>
+              <mat-hint>{{ 'Minimum bet' }}</mat-hint>
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>  
+  </div>
+</div>
+
+<div class="deck-bottom-row">
+  <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="250px">
+      <player [player]="getPlayer(5)"></player>
+    </div>  
+    <div fxLayout="column" fxFlex="250px">
+      <player [player]="getPlayer(4)"></player>
+    </div>  
+    <div fxLayout="column" fxFlex="250px">
+      <player [player]="getPlayer(3)"></player>
+    </div>  
+  </div>
+  <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center">
+    <mat-form-field fxLayout="column" fxFlex="70px">
+      <input matInput id="txtPockerChip10Player" type="text"
+        [(ngModel)]="playerUser.qtyPockerChip10" readonly>
+      <mat-hint>{{ 'Qty. Chip 10' }}</mat-hint>
+    </mat-form-field>
+    <mat-form-field fxLayout="column" fxFlex="70px">
+      <input matInput id="txtPockerChip20Player" type="text"
+        [(ngModel)]="playerUser.qtyPockerChip20" readonly>
+      <mat-hint>{{ 'Qty Chip 20' }}</mat-hint>
+    </mat-form-field>
+    <mat-form-field fxLayout="column" fxFlex="70px">
+      <input matInput id="txtPockerChip100Player" type="text"
+        [(ngModel)]="playerUser.qtyPockerChip100" readonly>
+      <mat-hint>{{ 'Qty Chip 100' }}</mat-hint>
+    </mat-form-field>
+    <mat-form-field fxLayout="column" fxFlex="70px">
+      <input matInput id="txtPockerChip10ToBetPlayer" type="number"
+        [(ngModel)]="playerUser.qtyPockerChip10ToBet" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+        (keyup)="keyRestrictOnlyNumber($event)" maxlength=5>
+      <mat-hint>{{ 'Chip 10 Bet' }}</mat-hint>
+    </mat-form-field>
+    <mat-form-field fxLayout="column" fxFlex="70px">
+      <input matInput id="txtPockerChip20ToBetPlayer" type="number"
+        [(ngModel)]="playerUser.qtyPockerChip20ToBet" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+        (keyup)="keyRestrictOnlyNumber($event)" maxlength=5>
+      <mat-hint>{{ 'Chip 20 Bet' }}</mat-hint>
+    </mat-form-field>
+    <mat-form-field fxLayout="column" fxFlex="70px">
+      <input matInput id="txtPockerChip100ToBetPlayer" type="number"
+        [(ngModel)]="playerUser.qtyPockerChip100ToBet" (keypress)="keyRestrictOnlyNumber($event)" (keydown)="keyRestrictOnlyNumber($event)"
+        (keyup)="keyRestrictOnlyNumber($event)" maxlength=5>
+      <mat-hint>{{ 'Chip 100 Bet' }}</mat-hint>
+    </mat-form-field>
+    <button mat-button id="btnCheckForCurrentPlayer" (click)="onBtnCheckForCurrentPlayer()" fxLayout="column" fxFlex="70px">{{ 'Check' }}</button>
+    <button mat-button id="btnFoldForCurrentPlayer" (click)="onBtnFoldForCurrentPlayer()" fxLayout="column" fxFlex="70px">{{ 'Fold' }}</button>
+    <button mat-button id="btnExitGame" (click)="onBtnExitGame()" fxLayout="column" fxFlex="70px">{{ 'Exit' }}</button>
+  </div>
+</div>

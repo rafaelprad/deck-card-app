@@ -1,0 +1,50 @@
+mat-card.card-home {
+  width: 300px !important;
+  min-height: 500px;
+  margin: 0 auto !important;
+  margin-top: 2.5% !important;
+  padding: 5px !important;
+}
+mat-card.card-home mat-card-actions {
+  padding-top: 20px;
+}
+mat-card.card-home mat-card-content img {
+  width: 100%;
+  margin: 10px auto !important;
+}
+
+mat-card.card-home input[type='number']::-webkit-inner-spin-button,
+mat-card.card-home input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+mat-card.card-home mat-card-actions {
+  margin: auto;
+}
+
+mat-card.card-home mat-card-actions div[style*='flex-direction: row'] {
+  margin-top: 5px;
+}
+
+mat-card.card-home button.mat-button {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-card.card-home {
+    width: 100% !important;
+    min-height: 50% !important;
+  }
+  mat-card.card-home mat-card-content img {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    width: 50% !important;
+    margin: 0px auto !important;
+  }
+}

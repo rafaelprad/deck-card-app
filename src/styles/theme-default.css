@@ -1,0 +1,54 @@
+.theme-default .footer {
+  background-color: #fff;
+}
+
+.theme-default .frame-content {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9ad13+0,fefcea+100 */
+  background: #6fabe4; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #66995f 0%, #999 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #66995f 0%, #999 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #66995f 0%, #999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66995f', endColorstr='#999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.theme-default button.mat-button {
+  background-color: #83aa29;
+  color: #fff;
+}
+.theme-default button.mat-button:not([disabled]):hover {
+  background-color: #084f08;
+  color: #fff;
+}
+
+.theme-default button.mat-button.hyperlink-inverted {
+  background-color: unset;
+  color: #83aa29;
+}
+.theme-default button.mat-button.hyperlink-inverted:hover {
+  background-color: unset;
+  color: #084f08;
+  border: unset;
+}
+
+.theme-default mat-card-header mat-card-title {
+  background: #66995f !important;
+  background: linear-gradient(135deg, #66995f, #66995f 50%, #999 100%, #999 0) !important;
+  color: #fff !important;
+}
+.theme-default mat-card mat-card-header div.mat-card-header-text mat-card-subtitle.mat-card-title-underline {
+  color: #66995f !important;
+}
+.theme-default mat-card mat-card-header div.mat-card-header-text mat-card-subtitle.mat-card-title-underline {
+  border-bottom-color: #66995f !important;
+}
+
+.theme-default mat-card.card-player.active mat-card-header mat-card-title {
+  background: #084f08 !important;
+  background: linear-gradient(135deg, #084f08, #084f08 50%, #999 100%, #999 0) !important;
+  color: #fff !important;
+}
+.theme-default mat-card.card-player.active mat-card-header div.mat-card-header-text mat-card-subtitle.mat-card-title-underline {
+  color: #084f08 !important;
+}
+.theme-default mat-card.card-player.active mat-card-header div.mat-card-header-text mat-card-subtitle.mat-card-title-underline {
+  border-bottom-color: #084f08 !important;
+}

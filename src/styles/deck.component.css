@@ -1,0 +1,35 @@
+deck>div {
+  position: relative;
+  margin-top: 7.5%;
+}
+.deck-top-row {
+  position: absolute;
+  top: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 20px !important;
+  width: 100%;
+}
+.deck-left-information {
+  position: absolute;
+  top: 20%;
+  margin-left: 5%;
+  margin-right: auto !important;
+  width: 100%;
+}
+.deck-left-information .mat-card {
+  opacity: .5;
+}
+.deck-center {
+  position: absolute;
+  top: 20%;
+  margin-left: 5%;
+  width: 100%;
+}
+.deck-bottom-row {
+  position: absolute;
+  top: 45%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+}

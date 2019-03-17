@@ -1,0 +1,43 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  text-decoration: none;
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+  vertical-align: top;
+}
+img,
+input,
+label {
+  vertical-align: middle;
+}
+
+.full-content,
+section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.frame-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

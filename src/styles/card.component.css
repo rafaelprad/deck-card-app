@@ -1,0 +1,11 @@
+mat-card.card-suit {
+  width: 30px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+mat-card.card-suit mat-card-content {
+  margin: 0 auto !important;
+}
+mat-card.card-suit mat-card-content img {
+  min-height: 32px;
+}

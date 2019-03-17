@@ -1,0 +1,33 @@
+<mat-card class="card-player" [ngClass]="getClass()">
+  <mat-card-header>
+    <mat-card-title>
+      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center">
+        <div *ngIf="getPlaying()" fxLayout="column">
+          <i class="material-icons left">{{ 'fiber_manual_record' }}</i>
+        </div>
+        <div fxLayout="column">
+          <img [src]="getUrlAvatarFilename()">
+        </div>  
+        <div fxLayout="column">
+          <h4>{{ getName() }}</h4>
+        </div>  
+        <div class="card-player-total-chip" fxLayout="column" fxFlex="100%">
+          <h4>{{ getTotalChip() }}</h4>
+        </div>  
+        <div *ngIf="hasTotalBetChip()" class="card-player-total-chip" fxLayout="column" fxFlex="100%">
+          <h4>{{ getTotalBetChip() }}</h4>
+        </div>  
+      </div>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <div *ngFor="let card of getListCard()" fxLayout="column" fxFlex="30px">
+        <card [card]="card" [ownerPlayer]="player"></card>
+      </div>  
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>
+      
